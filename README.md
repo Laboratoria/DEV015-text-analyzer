@@ -21,6 +21,8 @@
 * **Proyecto**: individual.
 * **Tiempo estimado**: 2 a 4 Sprints.
 * **Tecnologías**: HTML, CSS y JavaScript (vanilla).
+* **Aprendizaje**: [Notion](https://www.notion.so/P1-Analizador-de-Textos-2366ec2287024ae397bbb358ecafc50e).
+* **Prototipo**: [Figma](https://www.figma.com/design/Ta7gMoQJfuiPvfCvKBipFS/Text-Analyzer?t=1pC5VLiJ5NOn7VYO-1).
 
 
 ## 2. Preámbulo
