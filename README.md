@@ -85,18 +85,11 @@ El boilerplate que les damos contiene esta estructura:
 
 ### Descripción de scripts / archivos
 
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
-* `.github/workflows`: esta carpeta contine la configuracion para la ejecution
-  de Github Actions. No debes modificar esta carpeta ni su contenido.
-* `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de
-  aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
-* [`src/index.html`](./src/index.html): este es el punto de entrada a tu
-  aplicación. Este archivo debe contener tu HTML.
-* [`src/style.css`](./src/style.css): este archivo debe contener las reglas de
-  estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
+* `README.md`: debes modificarlo para explicar la información necesaria para el uso de tu aplicación web, así como una introducción a la aplicación, su funcionalidad y decisiones de diseño que tomaron.
+* `.github/workflows`: esta carpeta contine la configuracion para la ejecution de Github Actions. No debes modificar esta carpeta ni su contenido.
+* `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
+* [`src/index.html`](./src/index.html): este es el punto de entrada a tu aplicación. Este archivo debe contener tu HTML.
+* [`src/style.css`](./src/style.css): este archivo debe contener las reglas de estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
   uso de frameworks de CSS (Bootstrap, Materialize, etc).
 * [`src/analyzer.js`](./src/analyzer.js): acá debes implementar el objeto
   `analyzer`, el cual ya está _exportado_ en el _boilerplate_. Este objeto
