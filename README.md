@@ -384,17 +384,17 @@ relacionados con cada objetivo de aprendizaje.
 
 * **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-  - [ ] La estudiante creó una cuenta en Github.
+  - [x] La estudiante creó una cuenta en Github.
 
-  - [ ] La estudiante configuró su cuenta de Github con una llave SSH.
+  - [x] La estudiante configuró su cuenta de Github con una llave SSH.
 
 * **Git: Control de versiones con git (clone, add, commit, push)**
 
-  - [ ] La estudiante creó un _fork_ para su proyecto.
+  - [x] La estudiante creó un _fork_ para su proyecto.
 
-  - [ ] La estudiante clonó su repositorio usando una llave SSH.
+  - [x] La estudiante clonó su repositorio usando una llave SSH.
 
-  - [ ] La estudiante creó _commits_ y los guardó en Github.
+  - [x] La estudiante creó _commits_ y los guardó en Github.
 
 * **GitHub: Despliegue con GitHub Pages**
 
@@ -409,11 +409,11 @@ usuarias en el centro**
 
 * **Diseñar en distintos niveles de fidelidad**
 
-  - [ ] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
+  - [x] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
 
 * **Seguir los principios básicos de diseño visual**
 
-  - [ ] Se tuvieron en cuenta las reglas básica del
+  - [x] Se tuvieron en cuenta las reglas básica del
   [diseño visual](https://coda.io/d/Bootcamp-UX-Contenido_dqkqk2rV9Z2/Reglas-basicas-de-diseno-visual_suVcO)
   para diseñar la UI (interfáz gráfica)
 
