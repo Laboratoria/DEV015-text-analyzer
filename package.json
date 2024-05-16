@@ -27,12 +27,12 @@
     "babel-jest": "^27.0.1",
     "css": "^3.0.0",
     "eslint": "^8.3.0",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^6.1.1",
     "htmlhint": "^1.0.0",
     "jest": "^27.0.1",
     "jsdom": "^21.1.1",
     "opener": "^1.5.1",
-    "serve": "^13.0.2"
+    "serve": "^14.2.3"
   },
   "engines": {
     "node": ">=16.x"
