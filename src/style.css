@@ -15,11 +15,14 @@ body{
     font-style: normal;
     background-color: gainsboro;
     color: #333333;
+    /*footer*/
+    position: relative;
+    min-height: 100vh;
 }
 
 header{
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 h1{
@@ -27,7 +30,7 @@ h1{
 }
 
 p{
-    padding: 20px;
+    padding: 10px;
     font-weight: 300;
     color: #696969;
 
@@ -35,12 +38,15 @@ p{
 
 main{
     margin: 20px 100px;
+    padding-bottom: 50px;
 }
 
+/*1st component*/
 div{
-    display: inline-block;
     width: 60%;
-    margin: 0 50px
+    margin: 0 50px;
+    display: inline-block;
+    text-align: center;
 }
 
 textarea[name]{
@@ -60,7 +66,7 @@ textarea[name]{
 
 
 #reset-button{
-    margin: 10px 0px;
+    margin: 20px 0px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -78,9 +84,15 @@ textarea[name]{
     color: #696969;
 }
 
+/*2nd component*/
 ul{
-    display: inline-block;
     width: 30%;
+    display: inline-block;
+    /*The vertical-align CSS property sets vertical alignment of an inline, inline-block or table-cell box.*/
+    vertical-align: top;
+    background-color: rgb(166, 165, 165);
+    border: none;
+    border-radius: 5px;
 }
 
 .metricas{
@@ -91,12 +103,28 @@ ul{
     padding: ;
     */
     list-style-type: none;
+    color: #fafafa;
+    padding: 5px 10px;
+    line-height: 40px;
+}
+
+/*The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
+span{
+    float: right;
+    font-weight: 700;
 }
 
 footer{
-
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    text-align: center;
+    background-color: #fafafa;
 }
 
-p{
-
+/*The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first.*/
+footer>p{
+    font-weight: 100;
+    font-size: 15px;
 }
