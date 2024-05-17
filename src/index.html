@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Analizador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <h1>Analizador de Texto</h1>
-    <p>Analiza en tiempo real tu texto y obtén un recuento de  caracteres, palábras, números y mucho más!</p>
-  </header>
-  <main>
-    <div>
-    <textarea name="user-input" placeholder="Puedes escribir o pegar tu texto aquí" autofocus>
-    </textarea>
-    <button id="reset-button" onclick="">Limpiar métricas</button>
-  </div>
-  <div>
-    <ul>
-      <li>Caracteres <span>100</span></li>
-      <li>Caracteres <span>100</span></li>
-      <li>Caracteres <span>100</span></li>
-      <li>Caracteres <span>100</span></li>
-      <li>Caracteres <span>100</span></li>
-      <li>Caracteres <span>100</span></li>
-      <li>Caracteres <span>100</span></li>
-    </ul>
-  </div>
-  </main>
-  <footer>
-    <p>&#169; 2024 Alessandra Godoy</p>
-  </footer>
-  <script src="index.js" type="module"></script>
-</body>
+  <body>
+    <header>
+      <h1>Analizador de Texto</h1>
+      <p>
+        Analiza en tiempo real tu texto y obtén un recuento de caracteres,
+        palábras, números y mucho más!
+      </p>
+    </header>
+    <main>
+      <div>
+        <textarea
+          name="user-input"
+          placeholder="Puedes escribir o pegar tu texto aquí"
+          autofocus
+        >
+        </textarea>
+        <button id="reset-button" onclick="">Limpiar métricas</button>
+      </div>
+        <ul>
+          <li class="metricas">Caracteres <span>100</span></li>
+          <li class="metricas">Palabras <span>100</span></li>          
+          <li class="metricas">Numeros <span>100</span></li>
+          <li class="metricas">Caracteres <span>100</span></li>
+          <li class="metricas">Palabras <span>100</span></li>          
+          <li class="metricas">Numeros <span>100</span></li>
+        </ul>
+    </main>
+    <footer>
+      <p>&#169; 2024 Alessandra Godoy</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>

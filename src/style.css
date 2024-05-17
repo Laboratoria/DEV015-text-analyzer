@@ -1,0 +1,102 @@
+/* header y footer tipo */
+/* li clase */
+/* name attribute */
+/* button id */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: gainsboro;
+    color: #333333;
+}
+
+header{
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+
+}
+
+p{
+    padding: 20px;
+    font-weight: 300;
+    color: #696969;
+
+}
+
+main{
+    margin: 20px 100px;
+}
+
+div{
+    display: inline-block;
+    width: 60%;
+    margin: 0 50px
+}
+
+textarea[name]{
+    /*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. */
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    background-color: #fafafa;
+    resize: none;
+    /*IE puts a vertical scrollbar by default on all textareas. auto - Similar to scroll, but it adds scrollbars only when necessary*/
+    overflow: auto;
+    display: block;
+}
+
+
+#reset-button{
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #efefef;
+    color: #333333;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    /*hoover effect*/
+    transition-duration: 0.4s;
+}
+
+#reset-button:hover{
+    background-color: #fafafa;
+    color: #696969;
+}
+
+ul{
+    display: inline-block;
+    width: 30%;
+}
+
+.metricas{
+    /*
+    background: ;
+    border: ;
+    margin: ;
+    padding: ;
+    */
+    list-style-type: none;
+}
+
+footer{
+
+}
+
+p{
+
+}
