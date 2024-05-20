@@ -1,3 +1,12 @@
-import analyzer from './analyzer.js';
+const elemento = document.querySelector ("user-input");
 
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+console.log(elemento);
+
+
+const element = document.gerElementById("reset-button");
+
+console.log(element);
+
+
+const element = document.getElementsByName("user-input")
+

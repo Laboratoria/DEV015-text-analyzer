@@ -1,0 +1,41 @@
+li.one {
+    background-origin: content-box;
+    margin: 30px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+li.two {
+    background-origin: content-box;
+    margin: 30px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+li.three {
+    background-origin: content-box;
+    margin: 30px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+li.four {
+    background-origin: content-box;
+    margin: 30px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+li.five {
+    background-origin: content-box;
+    margin: 30px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+li.six {
+    background-origin: content-box;
+    margin: 30px;
+    border: 1px solid blue;
+    padding: 10px;
+}
