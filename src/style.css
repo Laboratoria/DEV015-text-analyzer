@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family:Arial, Helvetica, sans-serif
     font-weight: 400;
     font-style: normal;
     background-color: gainsboro;
@@ -45,21 +45,22 @@ div{
     text-align: center;
 }
 
-textarea[name]{
+/*'width', 'height', 'margin', 'padding', 'border', 'box-sizing', 'background'*/
+textarea[name="user-input"]{
     /*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. */
-    box-sizing: border-box;
     width: 100%;
     height: 300px;
+    margin: 1px;
     padding: 10px;
     border: 2px solid #efefef;
-    border-radius: 5px;
+    box-sizing: border-box;
     background-color: #fafafa;
+    border-radius: 5px;
     resize: none;
     /*IE puts a vertical scrollbar by default on all textareas. auto - Similar to scroll, but it adds scrollbars only when necessary*/
     overflow: auto;
     display: block;
 }
-
 
 #reset-button{
     margin: 20px 0px;
@@ -91,24 +92,24 @@ ul{
     border-radius: 5px;
 }
 
+/*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. */
 .metricas{
+    /*'width', 'height', 'margin', 'padding', 'border', 'box-sizing', 'background'9*/
+    width: 90%;
+    height: auto;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid rgb(166, 165, 165);
+    box-sizing: border-box;
+    background: rgb(166, 165, 165);
     /*
-    background: ;
-    border: ;
-    margin: ;
-    padding: ;
-    */
     list-style-type: none;
     color: #fafafa;
     padding: 5px 10px;
-    line-height: 40px;
+    line-height: 40px;*/
 }
 
 /*The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
-span{
-    float: right;
-    font-weight: 700;
-}
 
 footer{
     position: absolute;
