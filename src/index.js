@@ -2,25 +2,29 @@ import analyzer from './analyzer.js';
 
 const textarea = document.getElementsByName("user-input")[0];
 
+const list = document.querySelector('ul');
+const listItems = list.querySelectorAll('li');
+
 textarea.addEventListener("input", function() {
-//   console.log("values " +textarea.value);
     const input = textarea.value;
-
+    
     const wordCount = analyzer.getWordCount(input);
-    // console.log(`palabras: ${wordCount}`);
-
+    listItems[0].innerText = `Palabras: ${wordCount}`;
+    
     const characterCount = analyzer.getCharacterCount(input);
-    // console.log(`caracteres: ${characterCount}`);
+    listItems[1].innerText = `Caracteres: ${characterCount}`;
 
     const characterCountExcluding = analyzer.getCharacterCountExcludingSpaces(input);
-    // console.log(`caracteres sin espacios ${characterCountExcluding}`);
+    listItems[2].innerText = `Caracteres sin espacios: ${characterCountExcluding}`;
 
     const averageWords = analyzer.getAverageWordLength(input);
-    // console.log(`promedio ${averageWords}`)
+    listItems[3].innerText = `Promedio longitud: ${averageWords}`;
 
     const numberCount = analyzer.getNumberCount(input);
-    // console.log(`numeros ${numberCount}`);
+    listItems[4].innerText = `Numeros: ${numberCount}`;
 
     const numberSum = analyzer.getNumberSum(input);
-    // console.log(`suma ${numberSum}`);
+    listItems[5].innerText = `Suma de los numeros: ${numberSum}`;
+    
+
 });

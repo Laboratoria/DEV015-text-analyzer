@@ -30,19 +30,28 @@ const analyzer = {
 
   getNumberCount: (text) => {
     const numbers = text.match(/-?\d+(\.\d+)?/g);
+
+    if (numbers === null) {
+      return 0; 
+    }
     
     return numbers.length;
+    
   },
   
   getNumberSum: (text) => {
     const numbers = text.match(/-?\d+(\.\d+)?/g);
+    if (numbers === null) {
+      return 0; 
+    }
+    
     let sum = 0;
-
+    
     for ( let i = 0; i<numbers.length; i++){
       let number = Number(numbers[i])
       sum = sum + number;
     }
-
+    
     return sum;
   },
 };
