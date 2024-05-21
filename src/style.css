@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: gainsboro;
@@ -82,31 +82,31 @@ textarea[name="user-input"]{
 }
 
 /*2nd component*/
+
 ul{
     width: 30%;
     display: inline-block;
     /*The vertical-align CSS property sets vertical alignment of an inline, inline-block or table-cell box.*/
     vertical-align: top;
-    background-color: rgb(166, 165, 165);
+    background: rgb(166, 165, 165);
     border: none;
     border-radius: 5px;
 }
 
 /*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. */
 .metricas{
-    /*'width', 'height', 'margin', 'padding', 'border', 'box-sizing', 'background'9*/
+    /*'width', 'height', 'margin', 'padding', 'border', 'box-sizing', 'background'*/
     width: 90%;
     height: auto;
-    margin: 1px;
-    padding: 1px;
-    border: 1px solid rgb(166, 165, 165);
+    margin: 0px;
+    padding: 5px;
+    border: none;
     box-sizing: border-box;
     background: rgb(166, 165, 165);
-    /*
     list-style-type: none;
     color: #fafafa;
     padding: 5px 10px;
-    line-height: 40px;*/
+    line-height: 40px;
 }
 
 /*The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
