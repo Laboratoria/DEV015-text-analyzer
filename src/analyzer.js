@@ -29,9 +29,9 @@ const analyzer = {
     const pattern = /[\p{P}\s]/gu;
     //<---OH:
 
-    const newText = text.replace(pattern, "");
-
-    return newText.length;
+    const newText = text.replace(pattern, "").length;
+    console.log(newText);
+    return newText;
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
