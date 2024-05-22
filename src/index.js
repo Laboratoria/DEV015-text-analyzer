@@ -5,13 +5,13 @@ import analyzer from './analyzer.js';
 const ulElement = document.querySelector("ul");
   
 const liElements = ulElement.querySelectorAll("li")
-  
-let wordCounterLi = liElements[0];
-let charCounterLi = liElements[1];
-let numCounterLi = liElements[2];
-let charSpacesCounterLi = liElements[3];
-let averageLengthCounterLi = liElements[4];
-let sumCounterLi = liElements[5];
+
+const wordCounterLi = liElements[0];
+const charCounterLi = liElements[1];
+const numCounterLi = liElements[2];
+const charWithoutSpacesCounterLi = liElements[3];
+const averageLengthCounterLi = liElements[4];
+const sumCounterLi = liElements[5];
 
 //La aplicación registra un Event Listener para escuchar el evento input del <textarea> para actualizar las métricas cuando se haga escriba en el cuadro de texto.
 const textArea =document.querySelector("[name='user-input']");
@@ -20,12 +20,17 @@ textArea.addEventListener("input", retrieveText);
 
 //La aplicación actualiza el atributo textContent o innerHTML de los <li> que mostrar las métricas del texto.
 function retrieveText(){
-  let textInput = textArea.value;
-  console.log("text input: " + textInput);
-  let wordCounter = analyzer.getWordCount(textInput);
-  console.log("counter of words: " + wordCounter);
+  const textInput = textArea.value;
+
+  const wordCounter = analyzer.getWordCount(textInput);
+  const charCounter = analyzer.getCharacterCount(textInput);
+  const charCounterWithoutSpaces = analyzer.getCharacterCountExcludingSpaces(textInput);
+  const averageWordLength = analyzer.getAverageWordLength(textInput);
 
   wordCounterLi.textContent = "Palabras " + wordCounter;
+  charCounterLi.textContent = "Caracteres " +charCounter;
+  charWithoutSpacesCounterLi.textContent = "Caracteres sin Espacios " + charCounterWithoutSpaces;
+  averageLengthCounterLi.textContent = "Promedio de Longitud " + averageWordLength;
 }
 
 /*
