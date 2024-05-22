@@ -27,10 +27,10 @@ function retrieveText(){
   const charCounterWithoutSpaces = analyzer.getCharacterCountExcludingSpaces(textInput);
   const averageWordLength = analyzer.getAverageWordLength(textInput);
 
-  wordCounterLi.textContent = "Palabras " + wordCounter;
-  charCounterLi.textContent = "Caracteres " +charCounter;
-  charWithoutSpacesCounterLi.textContent = "Caracteres sin Espacios " + charCounterWithoutSpaces;
-  averageLengthCounterLi.textContent = "Promedio de Longitud " + averageWordLength;
+  wordCounterLi.textContent = "Palabras: " + wordCounter;
+  charCounterLi.textContent = "Caracteres: " +charCounter;
+  charWithoutSpacesCounterLi.textContent = "Caracteres sin Espacios: " + charCounterWithoutSpaces;
+  averageLengthCounterLi.textContent = "Promedio de Longitud: " + averageWordLength;
 }
 
 /*

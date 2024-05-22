@@ -14,7 +14,7 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     //Las expresiones regulares o regex son patrones usados para buscar combinaciones de carácters en un string.
-    //En este caso, el patrón [\p{P}|\s] busca cualquier carácter de puntuación \p{P} o espacio \s de forma global.
+    //En este caso, el patrón [\p{P}|\s] representa los carácter de puntuación \p{P} o espacios \s de forma global en todo el texto.
     const pattern = /[\p{P}|\s]/gu;
 
     const newText = text.replaceAll(pattern, "");
