@@ -6,6 +6,8 @@ const ulElement = document.querySelector("ul");
   
 const liElements = ulElement.querySelectorAll("li")
 
+//const ulElement = document.querySelector("ul.metrics:nth-child(1)");
+
 const wordCounterLi = liElements[0];
 const charCounterLi = liElements[1];
 const numCounterLi = liElements[2];
@@ -29,6 +31,7 @@ function retrieveText(){
 
   wordCounterLi.textContent = "Palabras: " + wordCounter;
   charCounterLi.textContent = "Caracteres: " +charCounter;
+  numCounterLi.textContent = "Números: " + analyzer.getNumberCount(textInput);
   charWithoutSpacesCounterLi.textContent = "Caracteres sin Espacios: " + charCounterWithoutSpaces;
   averageLengthCounterLi.textContent = "Promedio de Longitud: " + averageWordLength;
 }
