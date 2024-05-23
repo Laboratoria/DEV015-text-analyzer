@@ -1,0 +1,92 @@
+body{
+    background-color: #19193f;
+    font-family: "Patrick Hand", cursive;
+
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+header h1{
+    font-family: "Francois One", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: #D25285;
+}
+main ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main li{
+    list-style-type: none;
+
+    color: #6E4E7F;
+    font-size: 20px;
+    font-weight: 700;
+
+    background-color: #F59EBB;
+    padding: 8px;
+    max-width: 14rem;
+
+    border-radius: 0px 15px 15px 0px;
+}
+
+textarea{
+    min-width: 400px;
+    min-height: 200px;
+    background-color: #EFD6DF;
+    
+    background-image: url('./img/panther.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right bottom;
+
+    border-radius: 32px;
+    border-width: 1rem;
+    border-color: #D25285;
+    
+    padding: 1rem;
+    color: #6E4E7F;
+    font-size: 24px;
+    font-family: "Patrick Hand";
+    font-weight: 700;
+    
+    outline: none;
+    box-shadow: none;
+    
+    caret-color: #E4B461;
+}
+
+
+button{
+    text-align: center;
+    width: 12rem;
+    background-color: #D25285;
+    padding: 8px;
+    
+    font-family: "Patrick Hand";
+    font-size: 32px;
+    color: #EFD6DF;
+    
+    border-radius: 0px 0px 15px 15px;
+    border-width: 0;
+}
+
+footer{
+    text-align: end;
+    color: #EFD6DF;
+}
+
+.analizer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.analizer-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

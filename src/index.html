@@ -5,25 +5,35 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>Analizador de texto</h1>
   </header>
+  <main>
 
-  <ul>
-    <li>Palabras: 0</li>
-    <li>Caracteres: 0</li>
-    <li>Caracteres sin espacios: 0</li>
-    <li>Promedio longitud: 0</li>
-    <li>Numeros: 0</li>
-    <li>Suma de los numeros: 0</li>
-  </ul>
-  
-  <textarea name="user-input"></textarea>
+    <div class="analizer-content">
+      <ul>
+        <li>Palabras: 0</li>
+        <li>Caracteres: 0</li>
+        <li>Caracteres sin espacios: 0</li>
+        <li>Promedio longitud: 0</li>
+        <li>Numeros: 0</li>
+        <li>Suma de los numeros: 0</li>
+      </ul>
+      <div class="analizer-input">
+        <textarea name="user-input"></textarea>
+      
+        <button id="reset-button">Limpiar</button>
+      </div>
+    </div>
 
-  <button id="reset-button">Limpiar</button>
+  </main>
 
   <footer>
     <p>by FCG</p>

@@ -48,7 +48,7 @@ const analyzer = {
     let sum = 0;
     
     for ( let i = 0; i<numbers.length; i++){
-      let number = Number(numbers[i])
+      const number = Number(numbers[i])
       sum = sum + number;
     }
     
