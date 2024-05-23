@@ -7,7 +7,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), linear-gradient(90deg, #E4F7FE 0.12%, #ECEBFE 49.98%, #F7DDFD 99.83%);
     position: relative; 
@@ -61,6 +61,7 @@ textarea[name="user-input"]{
     box-sizing: border-box;
     background-color: #FFFFFF;
     border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
     resize: none;
     /*IE puts a vertical scrollbar by default on all textareas. auto - Similar to scroll, but it adds scrollbars only when necessary*/
     overflow: auto;
@@ -98,7 +99,6 @@ textarea[name="user-input"]:focus{
 }
 
 /*2nd component*/
-
 ul{
     width: 30%;
     min-height: 300px;
@@ -124,7 +124,7 @@ ul{
     color: #67696E;
     line-height: 50px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
 }
 

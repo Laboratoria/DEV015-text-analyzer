@@ -13,10 +13,9 @@ const analyzer = {
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    //Las expresiones regulares o regex son patrones usados para buscar combinaciones de carácters en un string.
-    //En este caso, el patrón [\p{P}|\s] representa los carácter de puntuación \p{P} o espacios \s de forma global en todo el texto.
-
     /*
+    Las expresiones regulares o regex son patrones usados para buscar combinaciones de carácters en un string.
+    En este caso, el patrón [\p{P}|\s] representa los carácter de puntuación \p{P} o espacios \s de forma global en todo el texto.
     / Inicio de patrón
     [] conjunto, coincide todos los caracteres dentro de los corchetes
     \p{P} patrón Unicode coincide todos los caracteres de puntuación
@@ -41,26 +40,36 @@ const analyzer = {
     }
     const average = sum/wordsArray.length;
 
-    return average;
+    if(!Number.isInteger(average)){
+      return average.toFixed(2);
+    }
+    else{
+      return average;
+    }
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const textArray = text.split(" ");
+
     let counter = 0;
-    //A 5 1.3 789 cat b21 3cdog 1.2b
-    for (let i = 0; i < textArray.length; i++) {
-      //if textArray[i] string is an interger, parse it to an integer
-      if (textArray[i]){
+    
+    for (let i = 0; i < text.length; i++) {
+      if (Number(text[i])){
         counter++;
       }
-      //elseif textArray[i] string is a float, parse it to a float
-      //else continue
     }
+    return counter;
 
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const textArray = text.split(" ");
+    let numTotal = 0;
+    
+    for (let i = 0; i < text.length; i++) {
+      if (Number(text[i])){
+        numTotal += Number(text[i]);
+      }
+    }
+    return numTotal;
     
   },
 };

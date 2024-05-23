@@ -29,26 +29,15 @@ function retrieveText(){
   const charCounterWithoutSpaces = analyzer.getCharacterCountExcludingSpaces(textInput);
   const numberCounter = analyzer.getNumberCount(textInput);
   const averageWordLength = analyzer.getAverageWordLength(textInput);
-  //console.log(charCounterWithoutSpaces);
+  const sumCounter = analyzer.getNumberSum(textInput);
 
   wordCounterLi.textContent = "Palabras: " + wordCounter;
   charCounterLi.textContent = "Caracteres: " +charCounter;
-  numCounterLi.textContent = "Números: " + analyzer.getNumberCount(textInput);
+  numCounterLi.textContent = "Números: " + numberCounter;
   charWithoutSpacesCounterLi.textContent = "Caracteres sin Espacios: " + charCounterWithoutSpaces;
   averageLengthCounterLi.textContent = "Promedio de Longitud: " + averageWordLength;
+  sumCounterLi.textContent = "Suma de Números: " + sumCounter;
 }
-
-/*
-  querySelectorCalls,
-  getElementByIdCalls,
-  addEventListenerCalls,
-  importStatements,
-  textContents,
-  innerHTMLs
-  */
-
-
-
 
 
 //La aplicación registra un Event Listener para escuchar el evento click del <button> que limpia el contenido de la caja de texto.
