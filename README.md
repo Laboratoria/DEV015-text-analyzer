@@ -34,11 +34,6 @@
 
 ## 2. Preámbulo
 
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
-
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
 Un analizador de texto es una aplicación para extraer información útil de un
 texto utilizando diversas técnicas, como el procesamiento del lenguaje
 natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
@@ -361,7 +356,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Pruebas unitarias (unit tests)**
 
-  - [ ] Pasan las pruebas unitarias.
+  - [x] Pasan las pruebas unitarias.
 
 * **Módulos de ECMAScript (ES Modules)**
 
@@ -502,29 +497,29 @@ logra agregando un atributo
 [`data-testid`](https://playwright.dev/docs/locators#locate-by-test-id).
 Por este motivo, es necesario agregar lo siguiente:
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de palabras_ debe tener un atributo
 `data-testid` con valor `word-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de caracteres_ debe tener un atributo
 `data-testid` con valor `character-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el
 _recuento de caracteres excluyendo espacios y signos de puntuación_
 debe tener un atributo
 `data-testid` con valor `character-no-spaces-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de números_ debe tener un atributo
 `data-testid` con valor `number-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar la _suma total de números_ debe tener un atributo
 `data-testid` con valor `number-sum`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar la _longitud media de palabras_ debe tener un atributo
 `data-testid` con valor `word-length-average`.
 
@@ -750,13 +745,13 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Git
 
-- [ ] **Git: Instalación y configuración**
+- [x] **Git: Instalación y configuración**
 
 - [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
 #### GitHub
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
 - [ ] **GitHub: Despliegue con GitHub Pages**
 
@@ -767,13 +762,13 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Centrado en el usuario
 
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+- [x] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
 
 ### Diseño de producto
 
-- [ ] **Diseñar en distintos niveles de fidelidad**
+- [x] **Diseñar en distintos niveles de fidelidad**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- [x] **Seguir los principios básicos de diseño visual**
 
 ## 11. Funcionalidades opcionales
 
