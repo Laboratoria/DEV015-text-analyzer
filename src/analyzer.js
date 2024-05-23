@@ -26,33 +26,42 @@ const analyzer = {
     g bandera global, busca en todo el texto
     u bandera unicode, busca en texto unicode
     */ 
-    const pattern = /[\p{P}\s]/gu;
-    //<---OH:
+    const pattern = /[\p{P}|\s]/gu;
 
-    const newText = text.replace(pattern, "").length;
-    console.log(newText);
-    return newText;
+    const newText = text.replace(pattern, "");
+    return newText.length;
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const wordsArray = text.split(" "); //<---OH:Aquí hago lo mismo que en la línea 4, estaría bien intentar llamar la función aquí dentro de otra función
+    const wordsArray = text.split(" "); 
     let sum = 0;
 
     for (let i = 0; i < wordsArray.length; i++) {
       sum += wordsArray[i].length;
     }
+    const average = sum/wordsArray.length;
 
-    return sum/wordsArray.length;
+    return average;
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const pattern = /[0-9]/g;
-    const numberArray = text.match(pattern);
+    const textArray = text.split(" ");
+    let counter = 0;
+    //A 5 1.3 789 cat b21 3cdog 1.2b
+    for (let i = 0; i < textArray.length; i++) {
+      //if textArray[i] string is an interger, parse it to an integer
+      if (textArray[i]){
+        counter++;
+      }
+      //elseif textArray[i] string is a float, parse it to a float
+      //else continue
+    }
 
-    return numberArray.length;
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    const textArray = text.split(" ");
+    
   },
 };
 
