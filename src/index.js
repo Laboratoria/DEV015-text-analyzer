@@ -46,7 +46,5 @@ const button = document.getElementById("reset-button");
 button.addEventListener("click", clearTextArea);
 
 function clearTextArea(){
-    textArea.value = "";
-
+  textArea.value = "";
 }
-

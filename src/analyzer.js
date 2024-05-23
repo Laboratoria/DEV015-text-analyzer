@@ -32,6 +32,11 @@ const analyzer = {
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    /* 
+      ✕ should return 5.53 for "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
+      Expected: 5.53
+      Received: "5.53"
+    */
     const wordsArray = text.split(" "); 
     let sum = 0;
 
@@ -49,7 +54,14 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-
+    /* 
+      ✕ should return 0 for "This is not a number: 41u0003jot"
+      Expected: 0
+      Received: 3
+      ✕ should return 3 for "Calculate the sum of 1.65 plus 0.15 plus 1.10."
+      Expected: 3
+      Received: 7  
+    */
     let counter = 0;
     
     for (let i = 0; i < text.length; i++) {
@@ -62,6 +74,14 @@ const analyzer = {
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    /* 
+      ✕ should return 0 for "This is not a number: 41u0003jot"
+      Expected: 0
+      Received: 8
+      ✕ should return 2.9 for "Calculate the sum of 1.65 plus 0.15 plus 1.10."
+      Expected: 2.9
+      Received: 20
+    */
     let numTotal = 0;
     
     for (let i = 0; i < text.length; i++) {
