@@ -1,0 +1,56 @@
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(47, 47, 39);
+    font-size: 35px;
+    text-align: center;
+    background: #f9cb35;
+    
+}
+
+body {
+    background-color:rgb(242, 245, 239)
+   
+}   
+textarea {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 100%;
+    background: #ece7e7;
+    border: 1px solid #050505;
+    box-sizing:  border-box; 
+    width: 75%;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 500ms;
+    width: 500px; /* Ancho del textarea */
+    height: 300px; /* Altura del textarea */
+    margin: 0 auto; /* Margen automático horizontalmente para centrarlo */
+    display: block; 
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 100%;
+    background: #f5c84d;
+    border: 1px solid #000000;
+    box-sizing:  border-box0; 
+    width: 75%;
+    border-radius: 25px;
+    padding: 5px;
+    transition: 500ms;
+    width: 180px; /* Ancho del textarea */
+    height: 80px; /* Altura del textarea */
+    margin: 0 auto; /* Margen automático horizontalmente para centrarlo */
+    margin-top: 2rem;
+    display: block; 
+  }
+  
+
+ul li{
+    text-align: left;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-right: 10px;
+    margin-top: 2rem;
+    margin-inline-start: 18rem;
+
+}
