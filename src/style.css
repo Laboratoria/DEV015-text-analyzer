@@ -1,0 +1,26 @@
+h1 {
+    color: rgb(251, 251, 252);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+h2{
+    color:rgba(208, 185, 250, 0.808);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+p {
+    color:rgb(57, 12, 129);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small
+}
+
+html {
+    background: linear-gradient(to bottom,#8e59b6,#DEB4FF);
+}
+
+#limpiar {
+  background-color: rgb(235, 240, 239);
+  text-align: center;
+  border-radius: 35px;
+}
