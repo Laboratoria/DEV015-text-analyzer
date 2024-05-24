@@ -1,5 +1,8 @@
 body{
-    background-color: #19193f;
+    background-image: url(./img/pattern-black2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     font-family: "Patrick Hand", cursive;
 
     display: grid;
@@ -22,29 +25,32 @@ main ul{
 main li{
     list-style-type: none;
 
-    color: #6E4E7F;
+    color: #87587E;
     font-size: 20px;
     font-weight: 700;
 
-    background-color: #F59EBB;
+    background-color: #F59DBB;
     padding: 8px;
     max-width: 14rem;
 
     border-radius: 0px 15px 15px 0px;
+    border-color: #F59DBB;
+    border-width: 5px;
+    border-style: solid;
 }
 
 textarea{
     min-width: 400px;
-    min-height: 200px;
-    background-color: #EFD6DF;
+    min-height: 300px;
+    background-color: #F0D6DF;
     
     background-image: url('./img/panther.png');
     background-repeat: no-repeat;
     background-size: 40%;
-    background-position: right bottom;
+    background-position: 260px 200px;
 
     border-radius: 32px;
-    border-width: 1rem;
+    border-width: 5px;
     border-color: #D25285;
     
     padding: 1rem;
