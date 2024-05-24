@@ -92,87 +92,6 @@ clic en un botón.
 
 ## 5. Boilerplate
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
-archivos y configuración inicial de dependencias y tests.
-
-El boilerplate que les damos contiene esta estructura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
-
-### Descripción de scripts / archivos
-
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
-* `.github/workflows`: esta carpeta contine la configuracion para la ejecution
-  de Github Actions. No debes modificar esta carpeta ni su contenido.
-* `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de
-  aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
-* [`src/index.html`](./src/index.html): este es el punto de entrada a tu
-  aplicación. Este archivo debe contener tu HTML.
-* [`src/style.css`](./src/style.css): este archivo debe contener las reglas de
-  estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
-  uso de frameworks de CSS (Bootstrap, Materialize, etc).
-* [`src/analyzer.js`](./src/analyzer.js): acá debes implementar el objeto
-  `analyzer`, el cual ya está _exportado_ en el _boilerplate_. Este objeto
-  (`analyzer`) debe contener seis métodos:
-  - `analyzer.getWordCount(text)`: esta función debe retornar el recuento de
-  palabras que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCount(text)`: esta función debe retornar el recuento
-  de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCountExcludingSpaces(text)`: esta función debe retornar
-  el recuento de caracteres excluyendo espacios y signos de puntuación que se
-  encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberCount(text)`: esta función debe retornar cúantos números
-  se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberSum(text)`: esta función debe retornar la suma de todos
-  los números que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getAverageWordLength(text)`: esta función debe retornar la longitud
-  media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  En este caso usa 2 dígitos decimales.
-
-  Para ejemplo de uso de cada función recomendamos ver el archivo
-  [`test/analyzer.spec.js`](./test/analyzer.spec.js).
-
-  _Nota:  para simplificar las funcionalidades, definiremos las palabras como
-  un grupos de caracteres separados por espacios. Por ejemplo las palabras del
-  texto de entrada `¡Si, Tú puedes hacerlo!` son cuatro:_
-
-  - _`¡Si,`_
-  - _`Tú`_
-  - _`puedes`_
-  - _`hacerlo!`_
-
-* [`src/index.js`](./src/index.js): acá debes escuchar eventos del DOM, invocar
-  los métodos del objeto `analyzer` según sea necesario y actualizar el resultado
-  en la UI (interfaz de usuaria).
-* [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
-pruebas unitarias para los métodos del objeto `analyzer`.
-
-***
 
 #### Deploy
 
@@ -273,26 +192,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores del DOM**
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).
 
 * **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `input` del `<textarea>` para actualizar las métricas
   cuando se haga escriba en el cuadro de texto.
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `click` del `<button>` que limpia el contenido de la
   caja de texto.
 
 * **Manipulación dinámica del DOM**
-  - [ ] La aplicación actualiza el atributo
+  - [x] La aplicación actualiza el atributo
   [`textContent`](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
   o
   [`innerHTML`](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
@@ -368,11 +287,11 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de linter (ESLINT)**
 
-  - [ ] Al ejecutar el linter no se muestran errores de formato y estilo.
+  - [x] Al ejecutar el linter no se muestran errores de formato y estilo.
 
 * **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
-  - [ ] En el código se utilizan identificadores descriptivos para variables
+  - [x] En el código se utilizan identificadores descriptivos para variables
   y funciones.
 
 ### Control de Versiones (Git y GitHub)
@@ -569,9 +488,6 @@ ejecuta lo siguiente. Si estas en Windows puedes usar Git Bash:
    `http://localhost:3000` en tu navegador.
 6. A codear se ha dicho! :rocket:
 
-### Recursos y temas relacionados
-
-Súmate al canal de Slack [#project-text-analyzer](https://claseslaboratoria.slack.com/archives/C058GP6K9NY)
 
 ## 9. Consideraciones para pedir tu Project Feedback
 
