@@ -19,18 +19,18 @@ const analyzer = {
 
   getAverageWordLength: (text) => {
     const words = text.trim().split(/\s+/);
-    const characters = text.replace(/[^\w]|_/g, '');
+    const characters = text.replace(/[^\w.,]|_/g, '');
 
     const wordsSize = words.length;
-
     const charactersSize = characters.length;
+    const average = Math.round((charactersSize/wordsSize)*100)/100;
 
-    return charactersSize/wordsSize;
+    return average;
   },
 
   getNumberCount: (text) => {
-    const numbers = text.match(/-?\d+(\.\d+)?/g);
-
+    const numbers = text.match(/\b-?\d+(\.\d+)?\b/g);
+    
     if (numbers === null) {
       return 0; 
     }
@@ -40,7 +40,7 @@ const analyzer = {
   },
   
   getNumberSum: (text) => {
-    const numbers = text.match(/-?\d+(\.\d+)?/g);
+    const numbers = text.match(/\b-?\d+(\.\d+)?\b/g);
     if (numbers === null) {
       return 0; 
     }
