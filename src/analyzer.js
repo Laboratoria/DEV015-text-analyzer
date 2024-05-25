@@ -54,7 +54,7 @@ const analyzer = {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
 
     const textArray = text.split(" ");
-    const pattern = /^\d+(\.\d+.?)?$/; //1.2. Cualquier número entero (12) o decimal (1.2) que termine con un punto o no.
+    const pattern = /^\d+(\.\d+.?)?$/; // Cualquier número entero (12) o decimal (1.2) que termine con un punto o no.
     let numTotal = 0;
     
     for (let i = 0; i < textArray.length; i++) {
