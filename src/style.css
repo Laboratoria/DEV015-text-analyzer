@@ -19,3 +19,9 @@ html {
     background: linear-gradient(to bottom,#8e59b6,#DEB4FF);
 }
 
+#limpiar {
+  background-color: rgb(235, 240, 239);
+  text-align: center;
+  border-radius: 35px;
+}
+
