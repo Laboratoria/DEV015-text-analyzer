@@ -13,3 +13,10 @@ textarea.addEventListener("input",() => {
     const wordCount = analyzer.getWordCount(textarea.value); 
     console.log("recuento",wordCount);
 });
+
+const resetButton = document.getElementById('reset-buton');
+
+resetButton.addEventListener('click', () => {
+    textarea.value = ' '; 
+    document.getElementById('wordCount').innerText = '0';
+});
