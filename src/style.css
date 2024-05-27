@@ -1,65 +1,53 @@
-li.one {
-    background-origin: content-box;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 10px;
-    display: inline-block;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-li.two {
-    background-origin: content-box;
-    margin: 10px;
-    border: 1px solid blue;
+ul li {
     padding: 10px;
-    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    color: #333;
 }
 
-li.three {
-    background-origin: content-box;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 10px;
-    display: inline-block;
+ul li:last-child {
+    border-bottom: none;
 }
 
-li.four {
-    background-origin: content-box;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 10px;
-    display: inline-block;
+
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
 }
 
-li.five {
-    background-origin: content-box;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 10px;
-    display: inline-block;
+section {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-li.six {
-    background-origin: content-box;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 10px;
-    display: inline-block;
-}
 
 
 
 #reset-button {
     background-color: black;
     color: white;
-    font-size: 1.5rem; /* Tamaño grande del texto */
-    padding: 18px 38px; /* Espaciado interior grande */
+    font-size: 1.1rem; /* Tamaño grande del texto */
+    padding: 12px 27px; /* Espaciado interior grande */
     border: none; /* Sin bordes */
-    border-radius: 12px; /* Bordes redondeados */
+    border-radius: 8px; /* Bordes redondeados */
     cursor: pointer; /* Cambiar el cursor al pasar por encima */
     display: inline-block; /* Asegurarse de que el botón se comporte como un bloque en línea */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fuente del texto */
-    font-weight: bold; /* Texto en negrita */
     text-align: center; /* Centrar el texto */
+    margin-top: 8px;
+    margin-left: 502px;
 }
 
 #resetButton:hover {
@@ -73,17 +61,25 @@ li.six {
 .header {
     text-align: center; /* Centrar el contenido del header */
     padding: 20px; /* Espaciado alrededor del header */
+    padding-top: 127px;
+    padding-right: 344px;
+    padding-bottom: 20px;
+    padding-left: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 52px;
 }
 
 tipo h1 {
-    background-color: #d3d3d3; /* Color de fondo gris claro */
+    background-color: #d6d6d6; /* Color de fondo gris claro */
     color: black; /* Color del texto */
-    font-size: 1.5rem; /* Tamaño del texto */
-    padding: 6px 200px; /* Espaciado interior */
+    font-size: 1.3rem; /* Tamaño del texto */
+    padding: 5px 137px; /* Espaciado interior */
+    padding-top: 5px;
+    padding-right: 137px;
+    padding-bottom: 5px;
+    padding-left: 137px;
     display: inline-block; /* Comportamiento de bloque en línea */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fuente del texto */
     font-weight: 500; /* Texto en negrita */
@@ -100,7 +96,7 @@ body {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    padding-left: 0px;
+    padding-left: 878px;
 
     margin-top: 0px;
     margin-right: 0px;
@@ -123,11 +119,15 @@ textarea[name="user-input"] {
 textarea[name="user-input"] {
     width: 100%;
     max-width: 600px; /* Ancho máximo del textarea */
-    height: 200px;
+    height: 179px;
     background-color: #e0e0e0; /* Color de fondo gris claro */
     border: none; /* Sin borde */
     resize: none; /* No redimensionable */
     padding: 10px; /* Espacio interno */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     font-size: 16px; /* Tamaño de fuente */
     font-family: Arial, sans-serif; /* Familia de fuentes */
     color: #666; /* Color del texto */
@@ -148,7 +148,7 @@ textarea[name="user-input"]::placeholder {
 html, body {
     height: 100%;
     margin: 0;
-    display: flex;
+    display: flex-direction: column; 
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
     background-image: url('./Rectangle.png'); /* URL de tu imagen de fondo */
