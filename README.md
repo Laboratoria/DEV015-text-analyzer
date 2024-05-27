@@ -25,12 +25,14 @@
   No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
   Irás aprendiendo.
 
+- **Proyecto**: individual.
+- **Tiempo estimado**: 2 a 4 Sprints.
+- **Tecnologías**: HTML, CSS y JavaScript (vanilla).
+- **Aprendizaje**: [Notion](https://www.notion.so/P1-Analizador-de-Textos-2366ec2287024ae397bbb358ecafc50e).
+- **Prototipo**: [Figma](https://www.figma.com/design/Ta7gMoQJfuiPvfCvKBipFS/Text-Analyzer?t=1pC5VLiJ5NOn7VYO-1).
+
+
 ## 2. Preámbulo
-
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
-
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 Un analizador de texto es una aplicación para extraer información útil de un
 texto utilizando diversas técnicas, como el procesamiento del lenguaje
@@ -90,87 +92,6 @@ clic en un botón.
 
 ## 5. Boilerplate
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
-archivos y configuración inicial de dependencias y tests.
-
-El boilerplate que les damos contiene esta estructura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
-
-### Descripción de scripts / archivos
-
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
-* `.github/workflows`: esta carpeta contine la configuracion para la ejecution
-  de Github Actions. No debes modificar esta carpeta ni su contenido.
-* `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de
-  aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
-* [`src/index.html`](./src/index.html): este es el punto de entrada a tu
-  aplicación. Este archivo debe contener tu HTML.
-* [`src/style.css`](./src/style.css): este archivo debe contener las reglas de
-  estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
-  uso de frameworks de CSS (Bootstrap, Materialize, etc).
-* [`src/analyzer.js`](./src/analyzer.js): acá debes implementar el objeto
-  `analyzer`, el cual ya está _exportado_ en el _boilerplate_. Este objeto
-  (`analyzer`) debe contener seis métodos:
-  - `analyzer.getWordCount(text)`: esta función debe retornar el recuento de
-  palabras que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCount(text)`: esta función debe retornar el recuento
-  de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCountExcludingSpaces(text)`: esta función debe retornar
-  el recuento de caracteres excluyendo espacios y signos de puntuación que se
-  encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberCount(text)`: esta función debe retornar cúantos números
-  se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberSum(text)`: esta función debe retornar la suma de todos
-  los números que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getAverageWordLength(text)`: esta función debe retornar la longitud
-  media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  En este caso usa 2 dígitos decimales.
-
-  Para ejemplo de uso de cada función recomendamos ver el archivo
-  [`test/analyzer.spec.js`](./test/analyzer.spec.js).
-
-  _Nota:  para simplificar las funcionalidades, definiremos las palabras como
-  un grupos de caracteres separados por espacios. Por ejemplo las palabras del
-  texto de entrada `¡Si, Tú puedes hacerlo!` son cuatro:_
-
-  - _`¡Si,`_
-  - _`Tú`_
-  - _`puedes`_
-  - _`hacerlo!`_
-
-* [`src/index.js`](./src/index.js): acá debes escuchar eventos del DOM, invocar
-  los métodos del objeto `analyzer` según sea necesario y actualizar el resultado
-  en la UI (interfaz de usuaria).
-* [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
-pruebas unitarias para los métodos del objeto `analyzer`.
-
-***
 
 #### Deploy
 
@@ -191,26 +112,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de HTML semántico**
 
-  - [ ] La aplicación tiene un encabezado conformado por un
+  - [x] La aplicación tiene un encabezado conformado por un
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   que es padre de un
   [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)
   con texto `Analizador de texto`. Para que puedas practicar más, estos
   elementos no pueden tener atributos `id`, ni `name`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
   con un el atributo `name` en el valor `user-input` para permitir a la usuaria
   ingresar un texto. Para que puedas practicar más, este elemento no puede
   tener atributos `id`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
   con 6 hijos [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li),
   uno para mostrar cada métrica.  Para que puedas practicar más, estos
   elementos no pueden tener atributos `id` ni `name` ni hijos.
 
-  - [ ] La aplicación tiene un pie de página conformado por un
+  - [x] La aplicación tiene un pie de página conformado por un
   [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
   que es padre de un
   [`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
@@ -218,7 +139,7 @@ relacionados con cada objetivo de aprendizaje.
   Para que puedas practicar más, estos elementos no pueden
   tener atributos `id`, ni `name`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
   con el atributo `id` en el valor `reset-button` para permitir a la usuaria,
   mediante un clic, limpiar el contenido de la caja de texto.
@@ -227,26 +148,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores de CSS**
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de tipo`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors)
   para darle estilo al
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   y al
   [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer).
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de class`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
   para darle estilo a los
   [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   descrito anteriormente.
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores de atributo`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
   para darle estilo al
   [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
   usando el atributo `name`.
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de ID`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#id_selectors)
   para darle estilo al
   [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
@@ -254,7 +175,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Modelo de caja (box model): border, margen, padding**
 
-  - [ ] Las
+  - [x] Las
   [`clases css`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
   de los
   [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
@@ -271,26 +192,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores del DOM**
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).
 
 * **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `input` del `<textarea>` para actualizar las métricas
   cuando se haga escriba en el cuadro de texto.
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `click` del `<button>` que limpia el contenido de la
   caja de texto.
 
 * **Manipulación dinámica del DOM**
-  - [ ] La aplicación actualiza el atributo
+  - [x] La aplicación actualiza el atributo
   [`textContent`](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
   o
   [`innerHTML`](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
@@ -300,11 +221,11 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Tipos de datos primitivos**
 
-  - [ ] La aplicación convierte valores tipo `string` a tipo `number`.
+  - [x] La aplicación convierte valores tipo `string` a tipo `number`.
 
 * **Strings (cadenas de caracteres)**
 
-  - [ ] La aplicación usa métodos para manipular strings como
+  - [x] La aplicación usa métodos para manipular strings como
   [`split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split),
   [`trim`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
   o
@@ -312,53 +233,53 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Variables (declaración, asignación, ámbito)**
 
-  - [ ] La aplicación declara variables con
+  - [x] La aplicación declara variables con
   [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
   y
   [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
 
-  - [ ] La aplicación NO declara variables con  `var`.
+  - [x] La aplicación NO declara variables con  `var`.
 
 * **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`if..else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   para evaluar condiciones.
 
 * **Uso de bucles/ciclos (while, for, for..of)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
   para crear un bucle.
 
 * **Funciones (params, args, return)**
 
-  - [ ] El objeto `analyzer` contiene un método `getWordCount` para calcular el
+  - [x] El objeto `analyzer` contiene un método `getWordCount` para calcular el
   recuento de palabras de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
+  - [x] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
   el recuento de caracteres de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
+  - [x] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
   para calcular el recuento de caracteres excluyendo espacios y signos de
   puntuación de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersCount` para contar
+  - [x] El objeto `analyzer` contiene un método `getNumbersCount` para contar
   cúantos números hay en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
+  - [x] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
   longitud media de los números en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getAverageWordLength` para
+  - [x] El objeto `analyzer` contiene un método `getAverageWordLength` para
   calcular la longitud media de las palabras en un texto.
 
 * **Pruebas unitarias (unit tests)**
 
-  - [ ] Pasan las pruebas unitarias.
+  - [x] Pasan las pruebas unitarias.
 
 * **Módulos de ECMAScript (ES Modules)**
 
-  - [ ] La aplicación usan
+  - [x] La aplicación usan
   [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
   y
   [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
@@ -366,28 +287,28 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de linter (ESLINT)**
 
-  - [ ] Al ejecutar el linter no se muestran errores de formato y estilo.
+  - [x] Al ejecutar el linter no se muestran errores de formato y estilo.
 
 * **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
-  - [ ] En el código se utilizan identificadores descriptivos para variables
+  - [x] En el código se utilizan identificadores descriptivos para variables
   y funciones.
 
 ### Control de Versiones (Git y GitHub)
 
 * **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-  - [ ] La estudiante creó una cuenta en Github.
+  - [x] La estudiante creó una cuenta en Github.
 
-  - [ ] La estudiante configuró su cuenta de Github con una llave SSH.
+  - [x] La estudiante configuró su cuenta de Github con una llave SSH.
 
 * **Git: Control de versiones con git (clone, add, commit, push)**
 
-  - [ ] La estudiante creó un _fork_ para su proyecto.
+  - [x] La estudiante creó un _fork_ para su proyecto.
 
-  - [ ] La estudiante clonó su repositorio usando una llave SSH.
+  - [x] La estudiante clonó su repositorio usando una llave SSH.
 
-  - [ ] La estudiante creó _commits_ y los guardó en Github.
+  - [x] La estudiante creó _commits_ y los guardó en Github.
 
 * **GitHub: Despliegue con GitHub Pages**
 
@@ -402,11 +323,11 @@ usuarias en el centro**
 
 * **Diseñar en distintos niveles de fidelidad**
 
-  - [ ] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
+  - [x] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
 
 * **Seguir los principios básicos de diseño visual**
 
-  - [ ] Se tuvieron en cuenta las reglas básica del
+  - [x] Se tuvieron en cuenta las reglas básica del
   [diseño visual](https://coda.io/d/Bootcamp-UX-Contenido_dqkqk2rV9Z2/Reglas-basicas-de-diseno-visual_suVcO)
   para diseñar la UI (interfáz gráfica)
 
@@ -495,29 +416,29 @@ logra agregando un atributo
 [`data-testid`](https://playwright.dev/docs/locators#locate-by-test-id).
 Por este motivo, es necesario agregar lo siguiente:
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de palabras_ debe tener un atributo
 `data-testid` con valor `word-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de caracteres_ debe tener un atributo
 `data-testid` con valor `character-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el
 _recuento de caracteres excluyendo espacios y signos de puntuación_
 debe tener un atributo
 `data-testid` con valor `character-no-spaces-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de números_ debe tener un atributo
 `data-testid` con valor `number-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar la _suma total de números_ debe tener un atributo
 `data-testid` con valor `number-sum`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar la _longitud media de palabras_ debe tener un atributo
 `data-testid` con valor `word-length-average`.
 
@@ -567,9 +488,6 @@ ejecuta lo siguiente. Si estas en Windows puedes usar Git Bash:
    `http://localhost:3000` en tu navegador.
 6. A codear se ha dicho! :rocket:
 
-### Recursos y temas relacionados
-
-Súmate al canal de Slack [#project-text-analyzer](https://claseslaboratoria.slack.com/archives/C058GP6K9NY)
 
 ## 9. Consideraciones para pedir tu Project Feedback
 
@@ -665,7 +583,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### JavaScript
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [x] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -699,7 +617,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
 </p></details>
 
-- [ ] **Uso de linter (ESLINT)**
+- [x] **Uso de linter (ESLINT)**
 
 - [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
@@ -731,7 +649,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Módulos
 
-- [ ] **Módulos de ECMAScript (ES Modules)**
+- [x] **Módulos de ECMAScript (ES Modules)**
 
   <details><summary>Links</summary><p>
 
@@ -743,13 +661,13 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 #### Git
 
-- [ ] **Git: Instalación y configuración**
+- [x] **Git: Instalación y configuración**
 
 - [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
 #### GitHub
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
 - [ ] **GitHub: Despliegue con GitHub Pages**
 
@@ -760,13 +678,13 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Centrado en el usuario
 
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+- [x] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
 
 ### Diseño de producto
 
-- [ ] **Diseñar en distintos niveles de fidelidad**
+- [x] **Diseñar en distintos niveles de fidelidad**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- [x] **Seguir los principios básicos de diseño visual**
 
 ## 11. Funcionalidades opcionales
 

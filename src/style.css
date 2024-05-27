@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body{
+    width: 100%;
+  /*
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: gainsboro;
+    color: #333333;
+    /*footer*/
+    position: relative;
+  */
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), linear-gradient(90deg, #E4F7FE 0.12%, #ECEBFE 49.98%, #F7DDFD 99.83%);
+    position: relative; 
+    overflow: hidden;
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+}
+
+h1{
+    color: #101119;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+p{
+    color: #67696E;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+main{
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid #D8DBDD;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*1st component*/
+div{
+    width: 60%;
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+textarea[name="user-input"]{
+    width: 100%;
+    height: 300px;
+    margin: 1px;
+    padding: 20px;
+    border: 2px solid #D8DBDD;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    /*IE puts a vertical scrollbar by default on all textareas. auto - Similar to scroll, but it adds scrollbars only when necessary*/
+    overflow: auto;
+    display: block;
+}
+
+textarea[name="user-input"]::placeholder{
+    color: #B3B4B7;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+textarea[name="user-input"]:focus{
+    outline: transparent;
+    border: 3px solid #EFF3F6;
+}
+
+#reset-button{
+    margin: 20px 0px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #7C5BD2;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    /*hoover effect*/
+    transition-duration: 0.4s;
+}
+
+#reset-button:hover{
+    background-color: #4809F4;
+    color: #FFFFFF;
+}
+
+/*2nd component*/
+ul{
+    width: 30%;
+    min-height: 300px;
+    height: auto;
+    display: inline-block;
+    /*The vertical-align CSS property sets vertical alignment of an inline, inline-block or table-cell box.*/
+    vertical-align: top;
+    background-color: #EFF3F6;
+    border: 1px solid #EFF3F6;
+    border-radius: 20px;
+}
+
+/*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. */
+.metricas{
+    width: 90%;
+    padding: 0px 20px;
+    height: auto;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    list-style-type: none;
+    color: #67696E;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+}
+
+/*The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
+footer{
+    box-sizing: border-box;
+    position: absolute; /*-----OH*/
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+/*The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first.*/
+footer > p{
+    font-weight: 100;
+    font-weight: 500;
+    font-size: 14px;
+    color: #B3B4B7;
+}

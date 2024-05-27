@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <script src="index.js" type="module"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de texto</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Analizador de Texto</h1>
+      <p>
+        Analiza en tiempo real tu texto y obtén un recuento de caracteres,
+        palábras, números y mucho más!
+      </p>
+    </header>
+    <main>
+      <div>
+        <textarea
+          name="user-input"
+          placeholder="Puedes escribir o pegar tu texto aquí"
+        ></textarea>
+        <button id="reset-button">Limpiar métricas</button>
+      </div>
+      <ul>
+        <li class="metricas" data-testid="word-count">Palabras</li>
+        <li class="metricas" data-testid="character-count">Caracteres</li>
+        <li class="metricas" data-testid="number-count">Numeros</li>
+        <li class="metricas" data-testid="character-no-spaces-count">Caracteres sin Espacios</li>
+        <li class="metricas" data-testid="word-length-average">Promedio de Longitud</li>
+        <li class="metricas" data-testid="number-sum">Suma de Numeros</li>
+      </ul>
+    </main>
+    <footer>
+      <p>&#169; 2024 Alessandra Godoy</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
