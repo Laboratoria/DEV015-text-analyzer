@@ -3,10 +3,7 @@ import analyzer from "./analyzer.js";
 const textarea = document.getElementsByName("user-input")[0];
 const buttonClean = document.getElementById('reset-button');
 
-
-textarea.addEventListener("input", function () {
-  const input = textarea.value;
-  
+function updateValues(input){
   // WORD COUNT
   const wordCount = analyzer.getWordCount(input);
   const wordCountShow = document.querySelector('[data-testid="word-count"]');
@@ -36,8 +33,14 @@ textarea.addEventListener("input", function () {
   const numberSum = analyzer.getNumberSum(input);
   const numberSumShow = document.querySelector('[data-testid="number-sum"]');
   numberSumShow.innerHTML = `Suma de los numeros: ${numberSum}`;
+}
+
+textarea.addEventListener("input", function () {
+  const input = textarea.value;
+  updateValues(input);
 });
 
 buttonClean.addEventListener('click', function(){
   textarea.value='';
+  updateValues('');
 });
