@@ -17,16 +17,29 @@
   </header>
   <main>
 
-    <div class="analizer-content">
+    <div id="analizer-content">
       <ul>
-        <li>Palabras:</li>
-        <li>Caracteres:</li>
-        <li>Caracteres sin espacios:</li>
-        <li>Promedio longitud:</li>
-        <li>Numeros:</li>
-        <li>Suma de los numeros:</li>
+        <li data-testid="word-count"
+            class="analizer-content-list">
+            Palabras:</li>
+        <li data-testid="character-count"
+            class="analizer-content-list">
+            Caracteres:</li>
+        <li data-testid="character-no-spaces-count"
+            class="analizer-content-list">
+            Caracteres sin espacios:</li>
+        <li data-testid="word-length-average"
+            class="analizer-content-list">
+            Promedio longitud:</li>
+        <li data-testid="number-count"
+            class="analizer-content-list">
+            Numeros:</li>
+        <li data-testid="number-sum"
+            class="analizer-content-list">
+            Suma de los numeros:</li>
       </ul>
-      <div class="analizer-input">
+
+      <div id="analizer-input">
         <textarea name="user-input"></textarea>
       
         <button id="reset-button">Limpiar</button>
