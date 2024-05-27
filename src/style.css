@@ -83,6 +83,7 @@ textarea[name="user-input"]{
     
     border-radius: 0px 0px 15px 15px;
     border-width: 0;
+    cursor: pointer;
 }
 
 footer{
