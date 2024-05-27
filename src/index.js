@@ -1,38 +1,41 @@
 import analyzer from "./analyzer.js";
 
 const textarea = document.getElementsByName("user-input")[0];
-
-const list = document.querySelector("ul");
-const listItems = list.querySelectorAll("li");
-
 const buttonClean = document.getElementById('reset-button');
+
 
 textarea.addEventListener("input", function () {
   const input = textarea.value;
   
   // WORD COUNT
   const wordCount = analyzer.getWordCount(input);
-  listItems[0].innerText = `Palabras: ${wordCount}`;
+  const wordCountShow = document.querySelector('[data-testid="word-count"]');
+  wordCountShow.innerHTML = `Palabras: ${wordCount}`;
   
   // CHARACTER COUNT
   const characterCount = analyzer.getCharacterCount(input);
-  listItems[1].innerText = `Caracteres: ${characterCount}`;
+  const characterCountShow = document.querySelector('[data-testid="character-count"]');
+  characterCountShow.innerHTML = `Caracteres: ${characterCount}`;
   
   // CHARACTER COUNT EXCLUDING
   const characterCountExcluding = analyzer.getCharacterCountExcludingSpaces(input);
-  listItems[2].innerText = `Caracteres sin espacios: ${characterCountExcluding}`;
+  const characterCountExcludingShow = document.querySelector('[data-testid="character-no-spaces-count"]');
+  characterCountExcludingShow.innerHTML = `Caracteres sin espacios: ${characterCountExcluding}`;
   
   // AVERAGE WORDS
   const averageWords = analyzer.getAverageWordLength(input);
-  listItems[3].innerText = `Promedio longitud: ${averageWords}`;
+  const averageWordsShow = document.querySelector('[data-testid="word-length-average"]');
+  averageWordsShow.innerHTML = `Promedio longitud: ${averageWords}`;
   
   // NUMBER COUNT
   const numberCount = analyzer.getNumberCount(input);
-  listItems[4].innerText = `Numeros: ${numberCount}`;
+  const numberCountShow = document.querySelector('[data-testid="number-count"]');
+  numberCountShow.innerHTML = `Numeros: ${numberCount}`;
   
   // NUMBER SUM
   const numberSum = analyzer.getNumberSum(input);
-  listItems[5].innerText = `Suma de los numeros: ${numberSum}`;
+  const numberSumShow = document.querySelector('[data-testid="number-sum"]');
+  numberSumShow.innerHTML = `Suma de los numeros: ${numberSum}`;
 });
 
 buttonClean.addEventListener('click', function(){
