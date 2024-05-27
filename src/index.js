@@ -2,14 +2,18 @@ import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
-//console.log("si estoy contando");
+const textarea = document.querySelector("textarea");
+const palabras = document.querySelector('.lista .palabras');
 
-const textareas = document.getElementsByName("textarea");
-const textarea = textareas[0];
-//console.log(textarea);
+textarea.addEventListener("input", () => {
+    const text = textarea.value;
+    const wordCount = analyzer.getWordCount(text);
+    palabras.textContent = `PALABRAS: ${wordCount}`;
+});
 
-textarea.addEventListener("input",() => {
-  
-    const wordCount = analyzer.getWordCount(textarea.value); 
-    console.log("recuento",wordCount);
+const resetButton = document.getElementById('reset-button');
+ console.log(resetButton);
+resetButton.addEventListener('click', () => {
+    textarea.value = ''; 
+    
 });

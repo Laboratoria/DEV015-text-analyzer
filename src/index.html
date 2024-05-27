@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto</title>
+  <title>Analizador de textos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -12,22 +12,19 @@
   <h1>Analizador de texto</h1> 
  </header>
 
- <p>Este es el q va a subir lisette</p>
   <h2>Te presentamos una herramienta para contar las metricas de textos, que te ayudará a saber la cantidad de palabras para establecer tus tarifas en traducciones</h2>
   <script src="index.js" type="module"></script>
-  <textarea name="textarea" placeholder="Escribe tu texto aquí por favor"></textarea>
-
-
-  <ul>
-    <li>CARACTERES</li>
-    <li>CARACTERES SIN ESPACIOS</li>
-    <li>PALABRAS</li>
-    <li>NÚMEROS</li>
-    <li>SUMA DE NÚMEROS</li>
-    <li>PROMEDIO DE LONGITUD</li>
+  <textarea name="user-input" placeholder="Escribe tu texto aquí por favor"></textarea>
+  <ul class="lista">
+    <li class="caracteres">CARACTERES</li>
+    <li class="sin-espacios">CARACTERES SIN ESPACIOS</li>
+    <li class="palabras">PALABRAS</li>
+    <li class="numeros">NÚMEROS</li>
+    <li class="suma">SUMA DE NÚMEROS</li>
+    <li class="longitud">PROMEDIO DE LONGITUD</li>
   </ul>
 
-  <button type="reset-button" id="limpiar">Limpiar</button>
+  <button type="button" id="reset-button">Limpiar</button>
 
 </body>
 <footer>
