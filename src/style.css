@@ -1,7 +1,8 @@
 body{
-    background-color: #C5C2E4;
-
-    font-family: "Patrick Hand", cursive;
+    background: rgb(129,121,178);
+    background: linear-gradient(0deg, rgba(129,121,178,1) 0%, rgba(98,92,144,1) 5%, rgba(25,25,63,1) 74%);
+    
+    font-family: "Podkova", serif;
 
     display: grid;
     place-content: center;
@@ -10,23 +11,19 @@ body{
 section{
     padding: 2rem 5rem;
 
-    border-radius: 50px;
-    background: linear-gradient(145deg, #d3d0f4, #b1afcd);
-    box-shadow:  20px 20px 60px #a7a5c2,
-                -20px -20px 60px #e3dfff;
+    border-radius: 30px;
+    
+    background-color: rgba(242, 229, 219, 0.203);
 }
 header{
     text-align: center;
 }
 
 h1{
-    font-family: "Francois One", sans-serif;
+    font-family: "Podkova", serif;
     font-weight: 700;
     font-size: 4rem;
-    color: #443578;
-    
-    text-shadow:  11px 11px 22px #a7a5c2,
-                -11px -11px 22px #e3dfff;
+    color: #E6B861;   
 }
 
 ul{
@@ -39,52 +36,48 @@ ul{
 
 .analizer-content-list{
     list-style-type: none;
-
-    color: #4F4486;
+    
+    color: #E6B861;   
     font-size: 20px;
     font-weight: 700;
+    
+    display: flex;
+    align-items: center;
 
-    /* background-color: #F59DBB; */
-    background: #C5C2E4;
-    box-shadow:  5px 5px 33px #a7a5c2,
-                -5px -5px 33px #e3dfff;
-    padding: 8px;
-    max-width: 14rem;
-
-    border-radius: 0px 15px 15px 0px;
-    border-color: #b8b4dc;
-    border-width: -12px;
-    border-style: solid;
+    background-color: rgba(25, 25, 63, 0.738);
+    padding: 8px 15px;
+    width: 250px;
+    min-height: 50px;
+    
+    border-radius: 20px;
 }
 
 textarea[name="user-input"]{
-    min-width: 400px;
+    min-width: 450px;
     min-height: 300px;
     
     
-    background: #C5C2E4;
-    box-shadow: inset 34px 34px 68px #a7a5c2,
-                inset -34px -34px 68px #e3dfff;
+    background-color: rgba(239, 214, 223, 0.656);
     
-    background-image: url('./img/pp-city.png');
+    background-image: url('./img/panther.png');
     background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: 190px 150px;
+    background-size: 42%;
+    background-position: 270px 180px;
     
-
+    
     border-radius: 32px;
-    border-width: 0;
-    border-color: #5B508F;
+    border-width: 4px;
+    border-color: #D25285;
     
     padding: 2rem;
-    color: #5B508F;
+    color: #19193f;
     font-size: 24px;
     font-family: "Patrick Hand";
     font-weight: 700;
     
     outline: none;
     resize: none;
-    caret-color: #5B508F;
+    caret-color: #19193f;
 }
 
 #reset-button{
@@ -94,27 +87,23 @@ textarea[name="user-input"]{
     
     font-family: "Patrick Hand";
     font-size: 32px;
-    color: #D9D5F5;
+    color: #fdf9ff;
     
     margin-top: 2rem;
     border-radius: 32px;
     border-width: 0;
     cursor: pointer;
-
-    background-color: #5B508F;
-    box-shadow:  11px 11px 22px #a7a5c2,
-                -11px -11px 22px #e3dfff;
+    
+    background-color: #ff68a4;
 }
 
 #reset-button:active{
-    background: #5B508F;
-    box-shadow: inset 11px 11px 22px #4d447a,
-                inset -11px -11px 22px #695ca4;
+    background: #E6B861;
 }
 
 footer{
     text-align: end;
-    color: #EFD6DF;
+    color: #f7eaee;
 }
 
 #analizer-content{
