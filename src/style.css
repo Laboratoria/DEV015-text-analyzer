@@ -1,19 +1,23 @@
 body{
-    background: rgb(129,121,178);
-    background: linear-gradient(0deg, rgba(129,121,178,1) 0%, rgba(98,92,144,1) 5%, rgba(25,25,63,1) 74%);
+    /* background: rgb(129,121,178);
+    background: linear-gradient(0deg, rgba(129,121,178,1) 0%, rgba(98,92,144,1) 5%, rgba(25,25,63,1) 74%); */
+    background-image: url(./img/bg-city.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     
     font-family: "Podkova", serif;
-
+    
     display: grid;
     place-content: center;
     min-height: 100vh;
 }
 section{
     padding: 2rem 5rem;
-
+    
     border-radius: 30px;
     
-    background-color: rgba(242, 229, 219, 0.203);
+    background-color: rgba(181, 163, 196, 0.475);
+    backdrop-filter: blur(8px);
 }
 header{
     text-align: center;
@@ -23,7 +27,7 @@ h1{
     font-family: "Podkova", serif;
     font-weight: 700;
     font-size: 4rem;
-    color: #E6B861;   
+    color: #e8edcc;   
 }
 
 ul{
@@ -37,7 +41,7 @@ ul{
 .analizer-content-list{
     list-style-type: none;
     
-    color: #E6B861;   
+    color: #D25285;   
     font-size: 20px;
     font-weight: 700;
     
@@ -57,12 +61,12 @@ textarea[name="user-input"]{
     min-height: 300px;
     
     
-    background-color: rgba(239, 214, 223, 0.656);
+    background-color: rgba(223, 214, 239, 0.563);
     
-    background-image: url('./img/panther.png');
+    background-image: url('./img/pp-city.png');
     background-repeat: no-repeat;
-    background-size: 42%;
-    background-position: 270px 180px;
+    background-size: 60%;
+    background-position: 230px 150px;
     
     
     border-radius: 32px;
