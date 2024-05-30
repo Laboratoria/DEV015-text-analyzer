@@ -31,8 +31,8 @@ textarea.addEventListener("input", function (event) {
   const numberCount = analyzer.getNumberCount(event.target.value)
   document.querySelector('.four').textContent = `Recuento de numeros: ${numberCount}`;
 
-const numberSum = analyzer.getNumberSum(event.target.value)
-document.querySelector('.five').textContent = `Suma total de numeros: ${numberSum}`;
+  const numberSum = analyzer.getNumberSum(event.target.value)
+  document.querySelector('.five').textContent = `Suma total de numeros: ${numberSum}`;
   
   const averageWordLength = analyzer.getAverageWordLength(event.target.value)
   document.querySelector('.six').textContent = `Longitud media de las palabras: ${averageWordLength.toFixed(2)}`;
