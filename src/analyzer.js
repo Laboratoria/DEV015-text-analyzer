@@ -1,21 +1,61 @@
-const analyzer = {  
+const analyzer = {
   getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    text = text.trim();
+    if (text === "") {
+      return 0;
+    }
+    const words = text.split(/\s+/);
+    return words.length;
   },
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    const numero_de_caracteres = text.length;
+    return numero_de_caracteres;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    if (typeof text !== "string") {
+      return 0;
+    }
+    let count = 0;
+    for (let i = 0; i < text.length; i++) {
+      const char = text[i];
+      if (char.match(/[\w]/)) {
+        count++;
+      }
+    }
+    return count;
   },
-  getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  getAverageWordLength: (text) => {
+    if (typeof text !== "string") {
+      return 0;
+    }
+    text = text.trim();
+    if (text === "") {
+      return 0;
+    }
+    const words = text.split(/\s+/);
+    if (words.length === 0) {
+      return 0;
+    }
+    let totalCharacters = 0;
+    for (const word of words) {
+      totalCharacters += word.length;
+    }
+    return totalCharacters / words.length;
   },
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const numbers = text.match(/\b-?\d+(\.\d+)?\b/g);
+    if (numbers === null) {
+      return 0;
+    }
+    return numbers.length;
   },
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    const numbers = text.match(/\b-?\d+(\.\d+)?\b/g);
+    if (numbers === null) {
+      return 0;
+    }
+    const sum = numbers.reduce((acc, num) => acc + parseFloat(num), 0);
+    return sum;
   },
 };
 

@@ -1,0 +1,193 @@
+ul {
+    list-style-type: none;
+}
+
+.item {
+    margin: 0%;
+    background: none;
+    border: 0cm;
+    box-sizing: border-box;
+    padding: 16px;
+    padding-top: 10px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    border-bottom: 1px solid #cdcdcd;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: black;
+    width: 525px;
+    font-family: "Inter", sans-serif;
+
+    font-weight: 500; 
+    
+}
+
+.item:last-child {
+    border-bottom: none;
+    font-family: "Inter", sans-serif;
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    font-family: "Inter", sans-serif;
+}
+
+section {
+    width: 100%;
+    max-width: 615px;
+    background-color: #ececec;
+    padding: 5px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px
+    border-radius: 8px;
+    margin-top: 21px;
+    margin-left: 1px;
+    border: 2px solid #d6d6d6;
+    border-radius: 8px;
+}
+
+
+
+
+#reset-button {
+    background-color: black;
+    color: white;
+    font-size: 1.1rem; /* Tamaño grande del texto */
+    padding: 12px 27px; /* Espaciado interior grande */
+    border: none; /* Sin bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    display: inline-block; /* Asegurarse de que el botón se comporte como un bloque en línea */
+    font-family: "Inter", sans-serif; /* Fuente del texto */
+    text-align: center; /* Centrar el texto */
+    margin-top: 8px;
+    margin-left: 524px;
+}
+
+#resetButton:hover {
+    background-color: #333; /* Color de fondo un poco más claro al pasar el cursor */
+}
+
+
+
+
+
+header {
+    text-align: center; /* Centrar el contenido del header */
+    padding: 20px; /* Espaciado alrededor del header */
+    padding-top: 1px;
+    padding-right: 508px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: #d6d6d6; /* Color de fondo gris claro */
+    color: black; /* Color del texto */
+    font-size: 1.3rem; /* Tamaño del texto */
+    padding: 5px 137px; /* Espaciado interior */
+    padding-top: 5px;
+    padding-right: 137px;
+    padding-bottom: 5px;
+    padding-left: 137px;
+    display: inline-block; /* Comportamiento de bloque en línea */
+    font-family: "Inter", sans-serif; /* Fuente del texto */
+    font-weight: 500; /* Texto en negrita */
+    margin-top: 133px;
+    margin-left: 111px;
+    border-radius: 3px;
+    
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 878px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/* Selector de atributo para textarea con name="user-input" */
+textarea[name="user-input"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Ajusta según la altura del header */
+}
+
+/* Selector de atributo para textarea con name="user-input" */
+textarea[name="user-input"] {
+    width: 100%;
+    max-width: 624px; /* Ancho máximo del textarea */
+    height: 179px;
+    background-color: #e0e0e0; /* Color de fondo gris claro */
+    resize: none; /* No redimensionable */
+    padding: 10px; /* Espacio interno */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: "Inter", sans-serif; /* Familia de fuentes */
+    color: #666; /* Color del texto */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    border-radius: 8px;
+    border: 0px solid #d6d6d6;
+}
+
+textarea[name="user-input"]::placeholder {
+    color: #999; /* Color del texto del placeholder */
+}
+
+
+
+
+
+
+
+/* Asegúrate de que el html y el body ocupen toda la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex-direction: column; 
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    background-image: url('./Rectangle.png'); /* URL de tu imagen de fondo */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+}
+
+
+h2 { 
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    display: block;
+    font-size: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 1.83em;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}

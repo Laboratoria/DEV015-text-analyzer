@@ -5,9 +5,38 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <script src="index.js" type="module"></script>
+  <header>
+    <h1>Text - analyzer</h1>
+  </header>
+
+  <textarea placeholder="Aquí escribe tu texto" name="user-input" cols="30" rows="10"></textarea>
+
+
+  <button id="reset-button">Reset</button>
+  <section>
+    <h2>Calculo de metricas</h2>
+    <ul>
+      <li class="item one" data-testid="word-count">Recuento de palabras</li>
+      <li class="item two" data-testid="character-count">Recuento de caracteres</li>
+      <li class="item three" data-testid="character-no-spaces-count">Recuento de caracteres excluyendo espacios y signos de puntuacion</li>
+      <li class="item four" data-testid="number-count">Recuento de numeros</li>
+      <li class="item five" data-testid="number-sum">Suma total de numeros</li>
+      <li class="item six" data-testid="word-length-average">Longitud media de las palabras</li>
+    </ul>
+  </section>
+  <footer>
+    <p>Barbara Evelin Rolon</p>
+  </footer>
 </body>
+
 </html>
+
+
