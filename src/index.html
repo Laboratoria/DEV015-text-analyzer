@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<script src="index.js" type="module"></script>
+
 <head>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
@@ -9,19 +11,19 @@
 
 <body>
   <header>
-    <h1>Analizador de Texto  final</h1> 
+    <h1>Analizador de Texto </h1> 
   </header>
+    
+  <textarea name="user-input" id="user-input"> </textarea>
+  <button id="reset-button">Limpiar</button>
   
-  <script src="index.js" type="module"></script>
-  <textarea name="user-input"> </textarea>
-  <button id="reset-button" type="reset">Limpiar Metricas </button>
   <ul>
-    <li>Palabras:</li>
-    <li>Caracteres:</li>
-    <li>Caracteres sin Espacios:</li>
-    <li>Números:</li>
-    <li>Suma Números:</li>
-    <li>Promedio Longitud Palabras:</li>
+    <li class="Analizador" data-testid="word-count">Palabras:</li> 
+    <li class="Analizador" data-testid="caracter-count">Caracteres:</li>
+    <li class="Analizador" data-testid="character-no-spaces-count">Caracteres sin Espacios:</li>
+    <li class="Analizador" data-testid="number-count">Números:</li>
+    <li class="Analizador" data-testid="number-sum">Suma Números:</li>
+    <li class="Analizador" data-testid="word-length-average">Promedio Longitud Palabras:</li>
    </ul>
   <footer>
     <p>Gema Riffo Yañez</p>
