@@ -1,37 +1,48 @@
 h1{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(47, 47, 39);
-    font-size: 35px;
+    background: #6d9793;
+    border: 2px solid #061417;
+    padding: 10px;
+    border-radius: 4px;
+    width: 360px;
     text-align: center;
-    background: #f9cb35;
-    
+   
+}
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+body {
+  background:   #124d54;
+
 }
 
-body {
-    background-color:rgb(242, 245, 239)
-  
-}
 textarea {
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 100%;
-    background: #ece7e7;
-    border: 1px solid #050505;
+    background: #cde4dc;
+    border: 2px solid #061417;
     box-sizing:  border-box; 
     width: 75%;
     border-radius: 25px;
     padding: 10px;
     transition: 500ms;
     width: 500px; /* Ancho del textarea */
-    height: 300px; /* Altura del textarea */
+    height: 260px; /* Altura del textarea */
     margin: 0 auto; /* Margen automático horizontalmente para centrarlo */
     display: block; 
-  }
+
+} 
+
   button {
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 100%;
-    background: #f5c84d;
-    border: 1px solid #000000;
-    box-sizing:  border-box0; 
+    background-color: #cde4dc;      /*cambiar color boton para que resalte entre los demas*/
+    border: 2px solid #061417;
+    box-sizing:  border-box; 
     width: 75%;
     border-radius: 25px;
     padding: 5px;
@@ -43,18 +54,28 @@ textarea {
     display: block; 
   }
 
-  .Analizador {
+  .analizador {
     text-align: left;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    border: 1px solid #000000;
+    border: 2px solid #061417;
     box-sizing: content-box; 
     border-radius: 20px;
     margin-right: 10px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-inline-start: 12rem;
     padding: 15px;
     width: 130px;
-    background-color: #f5c84d;
+    background-color: #6d9793;
+}
+
+footer{
+  margin-top: 20px;
+  font-size: 1em;
+  color: #000;
+  text-align: left;
+  margin-left: 10px;
+
+
 }
