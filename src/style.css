@@ -1,0 +1,123 @@
+body{
+    /* background: rgb(129,121,178);
+    background: linear-gradient(0deg, rgba(129,121,178,1) 0%, rgba(98,92,144,1) 5%, rgba(25,25,63,1) 74%); */
+    background-image: url('./image/bg-city.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: "Podkova", serif;
+    
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+section{
+    padding: 2rem 5rem;
+    
+    border-radius: 30px;
+    
+    background-color: rgba(181, 163, 196, 0.475);
+    backdrop-filter: blur(8px);
+}
+header{
+    text-align: center;
+}
+
+h1{
+    font-family: "Podkova", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #e8edcc;   
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.analizer-content-list{
+    list-style-type: none;
+    
+    color: #D25285;   
+    font-size: 20px;
+    font-weight: 700;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(25, 25, 63, 0.738);
+    padding: 8px 15px;
+    width: 250px;
+    min-height: 50px;
+    
+    border-radius: 20px;
+}
+
+textarea[name="user-input"]{
+    min-width: 450px;
+    min-height: 300px;
+    
+    
+    background-color: rgba(223, 214, 239, 0.563);
+    
+    background-image: url('../image/pp-city.png');    
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 230px 150px;
+    
+    
+    border-radius: 32px;
+    border-width: 4px;
+    border-color: #D25285;
+    
+    padding: 2rem;
+    color: #19193f;
+    font-size: 24px;
+    font-family: "Patrick Hand";
+    font-weight: 700;
+    
+    outline: none;
+    resize: none;
+    caret-color: #19193f;
+}
+
+#reset-button{
+    text-align: center;
+    width: 12rem;
+    padding: 8px;
+    
+    font-family: "Patrick Hand";
+    font-size: 32px;
+    color: #fdf9ff;
+    
+    margin-top: 2rem;
+    border-radius: 32px;
+    border-width: 0;
+    cursor: pointer;
+    
+    background-color: #ff68a4;
+}
+
+#reset-button:active{
+    background: #E6B861;
+}
+
+footer{
+    text-align: end;
+    color: #f7eaee;
+}
+
+#analizer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+#analizer-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
